@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xsd:schema xmlns="http://www.jumutown.com/custom/tags"  
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:beans="http://www.springframework.org/schema/beans"  
+    targetNamespace="http://www.jumutown.com/custom/tags"  
+    elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xsd:import namespace="http://www.springframework.org/schema/beans" />
+    
+    <xsd:element name="client-file-path">
+        <xsd:annotation>  
+            <xsd:documentation>文件库地址</xsd:documentation>  
+        </xsd:annotation>  
+        <xsd:complexType>  
+            <xsd:complexContent>  
+                <!-- 继承定义 从namespace="http://www.springframework.org/schema/beans" -->  
+                <xsd:extension base="beans:identifiedType">  
+                    <xsd:attribute name="path" type="xsd:string" use="required" />  
+                </xsd:extension>  
+            </xsd:complexContent>  
+        </xsd:complexType>  
+    </xsd:element>  
+</xsd:schema>
