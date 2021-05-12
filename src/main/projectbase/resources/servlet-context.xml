@@ -25,21 +25,13 @@
     <!--使用cglib动态代理-->
     <aop:aspectj-autoproxy proxy-target-class="true"/>
     <!-- 当请求应用程序首页时，将执行/hello请求，还可以设定成redirect -->
-    <mvc:view-controller path="/" view-name="forward:/planes_data/doIndex.do"/>
+    <!--<mvc:view-controller path="/" view-name="forward:/doIndex.do"/>-->
 
     <mvc:annotation-driven/>
 
     <mvc:default-servlet-handler/>
 
-    <mvc:resources mapping="/css/**" location="/WEB-INF/pages/css/" cache-period="31556926"/>
-
-    <mvc:resources mapping="/script/**" location="/WEB-INF/pages/script/" cache-period="31556926"/>
-
-    <mvc:resources mapping="/images/**" location="/WEB-INF/pages/images/" cache-period="31556926"/>
-
-    <mvc:resources mapping="/lib/**" location="/WEB-INF/pages/lib/" cache-period="31556926"/>
-
-    <mvc:resources mapping="/fonts/**" location="/WEB-INF/pages/fonts/" cache-period="31556926"/>
+    <mvc:resources mapping="/css/**" location="/WEB-INF/pages/ad/" cache-period="31556926"/>
 
     <bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
         <!-- 设置为true以忽略对Accept Header的支持 -->
