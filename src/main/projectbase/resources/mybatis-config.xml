@@ -7,14 +7,6 @@
     </settings>
 
     <typeAliases>
-        <typeAlias type="com.muhang.entity.PlaneMission" alias="planeMission"/>
-        <typeAlias type="com.muhang.entity.PlaneData" alias="planeData"/>
-        <typeAlias type="com.muhang.entity.Dictionary" alias="dictionary"/>
-        <typeAlias type="com.muhang.entity.Review" alias="review"/>
-        <typeAlias type="com.muhang.entity.Scheme" alias="scheme"/>
-        <typeAlias type="com.muhang.entity.Module" alias="module"/>
-        <typeAlias type="com.muhang.entity.Opitions" alias="opitions"/>
-        <typeAlias type="com.muhang.entity.Info" alias="info"/>
     </typeAliases>
 
     <!-- 分页组件 -->
@@ -45,13 +37,5 @@
     </plugins>
 
     <mappers>
-        <mapper resource="mapper/PlaneData.xml"/>
-        <mapper resource="mapper/PlaneMission.xml"/>
-        <mapper resource="mapper/Dictionary.xml"/>
-        <mapper resource="mapper/Review.xml"/>
-        <mapper resource="mapper/Scheme.xml"/>
-        <mapper resource="mapper/Module.xml"/>
-        <mapper resource="mapper/Opition.xml"/>
-        <mapper resource="mapper/Info.xml"/>
     </mappers>
 </configuration>

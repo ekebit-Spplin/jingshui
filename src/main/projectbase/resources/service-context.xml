@@ -4,6 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="
 		http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
@@ -32,8 +33,6 @@
     </bean>
 
     <!--注册字典载入类-->
-    <bean id="DictionaryTask" class="com.muhang.task.DictionaryTask"/>
-
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
           init-method="init" destroy-method="close">
         <!-- 基本属性 url、user、password -->
@@ -127,6 +126,9 @@
             </list>
         </property>
     </bean>
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+          p:hostName="120.27.150.61" p:port="6379" />
+
     <!-- 自定义标签组：文件库路径 -->
     <!-- <custom:client-file-path path="C:\my" id="filePath"/> -->
 </beans>

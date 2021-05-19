@@ -40,6 +40,8 @@
     <logger name="java.sql.PreparedStatement" level="DEBUG"/>
     <logger name="org.mybatis.spring.SqlSessionUtils" level="INFO"/>
     <logger name="com.alibaba.druid" level="INFO"/>
+    <logger name="org.hibernate" level="WARN"/>
+    <logger name="org.springframework" level="WARN"/>
     <!-- 日志输出级别 -->
     <root level="DEBUG">
         <appender-ref ref="STDOUT"/>
