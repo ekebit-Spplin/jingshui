@@ -126,6 +126,7 @@
             </list>
         </property>
     </bean>
+    <!--Redis工厂-->
     <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
           p:hostName="120.27.150.61" p:port="6379" />
 
