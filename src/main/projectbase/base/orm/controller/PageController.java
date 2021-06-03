@@ -16,8 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @Scope("prototype")
 public class PageController extends BaseController {
-    @RequestMapping(value = "/**/{pageName}.html", method = {
-            RequestMethod.GET})
     public String page(@PathVariable String pageName, HttpServletRequest request) {
         String path = request.getRequestURI().replaceAll(".html", "");
         logger.info("请求页面:" + path + ".jsp");
