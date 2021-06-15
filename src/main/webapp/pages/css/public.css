@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    position: fixed;
+    left: 0;
+    padding: 0;
+    height: 6rem;
+    width: 100vw;
+    bottom: 0;
+    float: right;
+}
+
+.border{
+    width: 0.2rem;
+    height: 6rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+.button{
+    width:25vw;
+    background-color: #468af5;
+    height: 6rem;
+    float: left;
+    bottom: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+
+}
+.button div {
+    position: relative;
+    vertical-align: middle;
+    top: 1.9vh;
+    width: 100%;
+}
+.button a {
+    padding: 1.9vh 9vw 3vh 9vw;
+    text-decoration: none;
+    color: #ffffff;
+    height: 8rem;
+    vertical-align: text-bottom;
+}
+.product{
+    height: 25vh;
+    background: #cccccc;
+    font-size: 10em;
+    text-align: center;
+    vertical-align: text-bottom;
+    line-height: 25vh;
+}
+.product>a{
+    text-decoration:underline;
+}
+
